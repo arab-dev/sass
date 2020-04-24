@@ -13,7 +13,7 @@ body {
     background-color: $color-alto ;
   }
 .contact-us{
-    @include page-main-text;
+    @include page-main-text($font-size:40);
     text-align: center;
 }
 

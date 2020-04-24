@@ -18,7 +18,7 @@ body {
         width: 44%;
 
         .title{
-            @include page-main-text;
+            @include page-main-text($font-size:50);
         }
         .subtitle{
             font-size: 30px;
