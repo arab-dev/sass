@@ -84,7 +84,7 @@ body {
 
     .main-section{
         display: inline-block;
-        width: 48%;
+        width: 45%;
 
         .title{
             font-size: 50px;
@@ -107,19 +107,22 @@ body {
             font-size: 16px;
         }
 
-        .section1{
+        &.section1{
             vertical-align: top;
             text-align: center;
             margin-bottom: 20px;
         }
 
         @media screen and (min-width: $screen-ipad-start){
-            padding: 20px 10%;
-            height: 70vh;
+            padding: 20px;
+            height: 50vh;
           }
         
         @media screen and (max-width: $screen600){
             display: block;
+            width: 100%;
+        }
+        .img-responsive{
             width: 100%;
         }
     }
@@ -130,11 +133,10 @@ body {
     margin-bottom: 0px;
     margin-top: 0px;
     padding-top: 20vh;
+    text-align: center;
 }
 
-.img-responsive{
-    width: 100%;
-}
+
 
   /* Latest products */
 
@@ -168,6 +170,9 @@ body {
         width: 100px;
         color: $color-white;
         border-radius: 10px;
+    }
+    .img-responsive{
+        width: 100%;
     }
 
   }
