@@ -1,3 +1,20 @@
+
+//Variables
+$color-white: #FFFFFF;
+$color-mine-shaft :  #333;
+$color-alto: #ddd;
+$color-black: #000;
+$color-havelock-blue: #5383D3;
+$color-outer-space: #33383b;
+$color-regent-gray: #92999f;
+$color-oslo-gray: #8f9296;
+$color-black012: rgba(0, 0, 0, 0.12);
+$color-shark: #292c2f;
+
+//Screen sizes
+$screen-ipad-start: 768px;
+$screen600: 600px;
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,13 +22,13 @@ body {
   
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color:$color-mine-shaft ;
   }
   
   .topnav a {
     float: left;
     display: block;
-    color: #FFFFFF;
+    color: $color-white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -19,26 +36,26 @@ body {
   }
   
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: $color-alto;
+    color: $color-black;
   }
   
   .topnav a.active {
-    background-color: #ddd;
-    color: black;
+    background-color: $color-alto;
+    color: $color-black;
   }
   
   .topnav .icon {
     display: none;
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: $screen-ipad-start){
     .topnav {
         padding: 0px 10%;
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen600) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -46,7 +63,7 @@ body {
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen600) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
@@ -63,7 +80,7 @@ body {
   /*Main section*/
 .main{
     height: 100vh;
-    background-color: #ddd ;
+    background-color: $color-alto ;
 }
 
 .contact-us{
@@ -89,9 +106,9 @@ body {
 
 .shop-now{
     height: 50px;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 10px;
-    color: black;
+    color: $color-black;
     width: 35%;
     display: inline-block;
     line-height: 45px;
@@ -109,7 +126,7 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $screen-ipad-start){
     .main {
         padding: 20px 10%;
         height: 70vh;
@@ -117,7 +134,7 @@ body {
 
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: $screen600){
 
     .main-section{
         display: block;
@@ -146,12 +163,12 @@ body {
     font-size: 14px;
     line-height: 40px;
     text-decoration: none;
-    background-color: #5383d3;
+    background-color: $color-havelock-blue;
     width: 100px;
-    color: white;
+    color: $color-white;
     border-radius: 10px;
   }
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: $screen600){
 
     .product{ 
         display: inline-block;
@@ -164,8 +181,8 @@ body {
   /*footer */
 
 .footer-distributed{
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	background-color: $color-shark;
+	box-shadow: 0 1px 1px 0 $color-black012;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -185,18 +202,18 @@ body {
 }
  
 .footer-distributed h3{
-	color:  #ffffff;
+	color:  $color-white;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
 }
  
 .footer-distributed h3 span{
-	color:  #5383d3;
+	color:  $color-havelock-blue;
 }
  
  
 .footer-distributed .footer-links{
-	color:  #ffffff;
+	color:  $color-white;
 	margin: 20px 0 12px;
 	padding: 0;
 }
@@ -209,7 +226,7 @@ body {
 }
  
 .footer-distributed .footer-company-name{
-	color:  #8f9296;
+	color:  $color-oslo-gray;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -221,8 +238,8 @@ body {
 }
  
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
+	background-color:  $color-outer-space;
+	color: $color-white;
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -240,7 +257,7 @@ body {
  
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+	color: $color-white;
 	vertical-align: middle;
 	margin:0;
 }
@@ -253,7 +270,7 @@ body {
 }
  
 .footer-distributed .footer-center p a{
-	color:  #5383d3;
+	color:  $color-havelock-blue;
 	text-decoration: none;;
 }
  
@@ -263,7 +280,7 @@ body {
  
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  #92999f;
+	color:  $color-regent-gray;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -271,7 +288,7 @@ body {
  
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #ffffff;
+	color:  $color-white;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -286,11 +303,11 @@ body {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  $color-outer-space;
 	border-radius: 2px;
  
 	font-size: 20px;
-	color: #ffffff;
+	color: $color-white;
 	text-align: center;
 	line-height: 35px;
  
