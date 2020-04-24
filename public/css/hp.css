@@ -50,8 +50,9 @@ body {
     width: 44%; }
     .main .main-section .title {
       font-size: 50px;
+      margin-bottom: 0px;
       margin-top: 0px;
-      padding: 20px; }
+      padding-top: 20px; }
     .main .main-section .subtitle {
       font-size: 30px; }
     .main .main-section .shop-now {
