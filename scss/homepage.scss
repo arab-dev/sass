@@ -1,5 +1,6 @@
 @import './helpers/variables';
 @import './helpers/mixins';
+@import './helpers/buttons';
 
 body {
     margin: 0;
@@ -25,15 +26,7 @@ body {
         }
 
         .shop-now{
-            height: 50px;
-            background-color: $color-white;
-            border-radius: 10px;
-            color: $color-black;
-            width: 35%;
-            display: inline-block;
-            line-height: 45px;
-            text-align: center;
-            font-size: 16px;
+            @extend .main-cta
         }
 
         &.section1{
@@ -80,15 +73,7 @@ body {
     }
 
     .shop-product{
-        display: inline-block;
-        height: 40px;
-        font-size: 14px;
-        line-height: 40px;
-        text-decoration: none;
-        background-color: $color-havelock-blue;
-        width: 100px;
-        color: $color-white;
-        border-radius: 10px;
+        @extend .secondary-cta;
     }
     .img-responsive{
         width: 100%;
