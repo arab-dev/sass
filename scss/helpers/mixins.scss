@@ -1,5 +1,10 @@
-@mixin  page-main-text($font-size) {
-    font-size: #{$font-size}px;
+@mixin  page-main-text($font-size : null) {
+    @if($font-size){
+        font-size: #{$font-size}px;
+    }@else{
+        font-size: 50px;
+    }
+    
     margin-bottom: 0px;
     margin-top: 0px;
     padding-top: 20px;

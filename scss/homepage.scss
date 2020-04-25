@@ -1,6 +1,7 @@
 @import './helpers/variables';
 @import './helpers/mixins';
 @import './helpers/buttons';
+@import './helpers/helpers';
 
 body {
     margin: 0;
@@ -19,10 +20,10 @@ body {
         width: 44%;
 
         .title{
-            @include page-main-text($font-size:50);
+            @include page-main-text;
         }
         .subtitle{
-            font-size: 30px;
+            @extend .fn-24;
         }
 
         .shop-now{
