@@ -1,5 +1,8 @@
 @for $i from 10 through 30  {
     .fn-#{$i}{
-        font-size: #{$i}px;
+        @if(($i % 2) ==0){
+            @debug "font class for size: #{$i}";
+            font-size: #{$i}px;
+        }
     }
 }
