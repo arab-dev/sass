@@ -23,7 +23,7 @@ body {
             @include page-main-text;
         }
         .subtitle{
-            @extend .fn-24;
+            @extend %fn-24;
         }
 
         .shop-now{

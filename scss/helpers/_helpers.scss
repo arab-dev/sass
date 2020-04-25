@@ -1,7 +1,7 @@
 @for $i from 10 through 30  {
     @if(($i % 2) ==0){
         @debug "font class for size: #{$i}";
-        .fn-#{$i}{
+        %fn-#{$i}{
             font-size: #{$i}px;
         }
     }
